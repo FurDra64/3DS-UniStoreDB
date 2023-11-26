@@ -6,7 +6,7 @@
 		"file":"FurDra_JPN_Archive.unistore",
 		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FurDra_JPN_Archive.unistore",
 		"version":3,
-		"revision":3
+		"revision":5
 	},
 	"storeContent":[
 		{
@@ -15,7 +15,7 @@
 				"version":"v1.0.0",
 				"console":["3DS"],
 				"description":"難しい事分からない人向けに\nPretendoとLuma3DSを良い感じに設定する\nPretendoを使う場合Nimbusで切り替えた後に\n新しくアカウントを作ってください\nLuma3DSの設定が変わります\ndisable_arm11_exception_handlers = 1\napp_launch_new_3ds_cpu = clock+l2",
-				"last_updated":"2023-11-26 at 23:00 (UTC)"
+				"last_updated":"2023-11-26 at 3:00 (UTC)"
 			},
 			"インストール!!":{
 				"script":[
@@ -85,6 +85,7 @@
 					},
 					{
 						"file":"/combined.1.5.0.zip",
+						"input":"",
 						"message":"Pretendo Nimbusをインストール",
 						"output":"/",
 						"type":"extractFile"
