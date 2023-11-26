@@ -74,7 +74,8 @@
 					},
 					{
 						"file":"/Luma3DS.zip",
-						"message":"一時ファイルを削除"
+						"message":"一時ファイルを削除",
+						"type":"deleteFile"
 					},
 					{
 						"file":"https://github.com/PretendoNetwork/nimbus/releases/download/v1.5.0/combined.1.5.0.zip",
