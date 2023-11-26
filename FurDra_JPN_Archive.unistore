@@ -2,11 +2,11 @@
 	"storeInfo":{
 		"title":"FurDra_JPN_Archive",
 		"author":"FurDra",
-		"description":"3gx,Luma3DS,Pretendoなどを自動インストール日本人向けストア",
+		"description":"3gx,Luma3DS,Pretendoなどを自動インストールする日本のストア",
 		"file":"FurDra_JPN_Archive.unistore",
 		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FurDra_JPN_Archive.unistore",
 		"version":3,
-		"revision":1
+		"revision":2
 	},
 	"storeContent":[
 		{
@@ -14,7 +14,7 @@
 				"title":"良い感じにセットアップ",
 				"version":"v1.0.0",
 				"console":["3DS"],
-				"description":"難しい事分からない人向けにPretendoとLuma3DSを良い感じに設定する\nPretendoを使う場合Nimbusで切り替えた後に新しくアカウントを作ってください\nLuma3DSの設定が変わります\ndisable_arm11_exception_handlers = 1\napp_launch_new_3ds_cpu = clock+l2",
+				"description":"難しい事分からない人向けに\nPretendoとLuma3DSを良い感じに設定する\nPretendoを使う場合Nimbusで切り替えた後に\n新しくアカウントを作ってください\nLuma3DSの設定が変わります\ndisable_arm11_exception_handlers = 1\napp_launch_new_3ds_cpu = clock+l2",
 				"last_updated":"2023-11-26 at 23:00 (UTC)"
 			},
 			"インストール!!":{
