@@ -1,6 +1,6 @@
 ## 概要
-Universal-Updater用の日本人向けStore
-3gxやPretendoなどを簡単に入れられるストア
+Universal-Updater用の日本人向けStore  
+3gxやPretendoなどを簡単に入れられるストア  
 ストアの名前誰か考えて()
 
 ## ストアの追加
