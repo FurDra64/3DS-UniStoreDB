@@ -2,204 +2,70 @@
 	"storeInfo":{
 		"title":"FurDra日本ストア",
 		"author":"FurDra",
-		"description":"3gx,Luma3DS,Pretendoなどを自動インストールする日本のストア",
+		"description":"3gx,Luma3DSなどを自動インストールする日本のストア\nリクエストがあれば追加する\n掲示板 https://furdra.bbs.fc2.com/",
 		"file":"FD日本ストア.unistore",
-		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FD日本ストア.unistore",
+		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FD%E6%97%A5%E6%9C%AC%E3%82%B9%E3%83%88%E3%82%A2.unistore",
 		"version":3,
-		"revision":6
+		"revision":8
 	},
 	"storeContent":[
 		{
 			"info":{
-				"title":"改造自動セットアップ",
-				"version":"v1.0.0",
-				"console":["3DS"],
-				"description":"このストアを使うなら最初に入れるべき\nv9.1のコードも使えるv13.0.2のPlugin Selector\nLuma3DSの最適な設定を自動設定\nPretendoの自動フルインストール\nPretendoを使う場合Nimbusで切り替えた後に\n新しくアカウントを作ってください",
-				"last_updated":"2023-11-26 at 3:00 (UTC)"
+				"title":"Luma3DS",
+				"description":"Tekito-256が作った\nプラグインローダーと\n3gxがバージョン関係なく全て使える",
+				"console":["3DS"]
 			},
-			"Luma3DSとPretendoインストール!!":{
+			"Luma3DS v13.0.2 インストール":{
 				"script":[
 					{
-						"file":"/boot.firm",
-						"message":"現在使用しているLuma3DSのboot.firmを削除",
-						"type":"deleteFile"
-					},
-					{
-						"file":"/boot.3dsx",
-						"message":"現在試用しているLuma3DSのboot.3dsxを削除",
-						"type":"deleteFile"
-					},
-					{
 						"file":"https://github.com/LumaTeam/Luma3DS/releases/download/v13.0.2/Luma3DSv13.0.2.zip",
-						"message":"新しいLuma3DSをダウンロード",
 						"output":"/Luma3DSv13.0.2.zip",
 						"type":"downloadFile"
 					},
 					{
 						"file":"/Luma3DSv13.0.2.zip",
 						"input":"boot.3dsx",
-						"message":"新しいLuma3DSのboot.3dsxをインストール",
 						"output":"/boot.3dsx",
 						"type":"extractFile"
 					},
 					{
 						"file":"/Luma3DSv13.0.2.zip",
-						"message":"一時ファイルを削除",
 						"type":"deleteFile"
 					},
 					{
 						"file":"https://github.com/Tekito-256/Luma3DS/releases/download/v11.0/Luma3DS.zip",
-						"message":"Plugin Selectorをダウンロード",
 						"output":"/Luma3DS.zip",
 						"type":"downloadFile"
 					},
 					{
 						"file":"/Luma3DS.zip",
 						"input":"luma/firms/v9.1.firm",
-						"message":"Plugin Selector(v9.1)をインストール",
 						"output":"/luma/firms/v9.1.firm",
 						"type":"extractFile"
 					},
 					{
 						"file":"https://github.com/Tekito-256/Luma3DS/releases/download/v13.0.2/boot.firm",
-						"message":"Tekito-256のboot.firm(v13.0.2)をインストール",
 						"output":"/boot.firm",
 						"type":"downloadFile"
 					},
 					{
 						"source":"/boot.firm",
-						"message":"Plugin Selectorへboot.firm(v13.0.2)をインストール",
 						"destination":"/luma/firms/v11.0.firm",
 						"type":"copy"
 					},
 					{
 						"file":"/Luma3DS.zip",
-						"message":"一時ファイルを削除",
-						"type":"deleteFile"
-					},
-					{
-						"file":"https://github.com/PretendoNetwork/nimbus/releases/download/v1.5.0/combined.1.5.0.zip",
-						"message":"Pretendo Nimbusをダウンロード",
-						"output":"/combined.1.5.0.zip",
-						"type":"downloadFile"
-					},
-					{
-						"file":"/combined.1.5.0.zip",
-						"input":"",
-						"message":"Pretendo Nimbusを展開",
-						"output":"/",
-						"type":"extractFile"
-					},
-					{
-						"file":"/combined.1.5.0.zip",
-						"message":"一時ファイルを削除",
-						"type":"deleteFile"
-					},
-					{
-						"file":"/cias/nimbus.cia",
-						"message":"Pretendo Nimbusをインストール",
-						"type":"installCia"
-					},
-					{
-						"file":"/cias/nimbus.cia",
-						"message":"一時ファイル削除",
-						"type":"deleteFile"
-					},
-					{
-						"file":"/luma/config.ini",
-						"message":"Luma3DSのConfig.iniを削除",
-						"type":"deleteFile"
-					},
-					{
-						"file":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/file/luma/config.ini",
-						"message":"Luma3DSの新しいConfig.iniをダウンロード",
-						"output":"/luma/config.ini",
-						"type":"downloadFile"
-					}
-				],
-				"type":"nightly"
-			},
-			"主要アプリのアップデート":{
-				"script":[
-					{
-						"repo":"astronautlevel2/Anemone3DS",
-						"file":"Anemone3DS.cia",
-						"output":"/Anemone3DS.cia",
-						"type":"downloadRelease"
-					},
-					{
-						"file":"/Anemone3DS.cia",
-						"type":"installCia"
-					},
-					{
-						"file":"/Anemone3DS.cia",
-						"type":"deleteFile"
-					},
-					{
-						"repo":"BernardoGiordano/Checkpoint",
-						"file":"Checkpoint.cia",
-						"output":"/Checkpoint.cia",
-						"type":"downloadRelease"
-					},
-					{
-						"file":"/Checkpoint.cia",
-						"type":"installCia"
-					},
-					{
-						"file":"/Checkpoint.cia",
-						"type":"deleteFile"
-					},
-					{
-						"repo":"astronautlevel2/Anemone3DS",
-						"file":"Anemone3DS.cia",
-						"output":"/Anemone3DS.cia",
-						"type":"downloadRelease"
-					},
-					{
-						"file":"/",
-						"type":"installCia"
-					},
-					{
-						"file":"/",
-						"type":"deleteFile"
-					},
-					{
-						"repo":"astronautlevel2/Anemone3DS",
-						"file":"Anemone3DS.cia",
-						"output":"/Anemone3DS.cia",
-						"type":"downloadRelease"
-					},
-					{
-						"file":"/",
-						"type":"installCia"
-					},
-					{
-						"file":"/",
-						"type":"deleteFile"
-					},
-					{
-						"repo":"astronautlevel2/Anemone3DS",
-						"file":"Anemone3DS.cia",
-						"output":"/Anemone3DS.cia",
-						"type":"downloadRelease"
-					},
-					{
-						"file":"/",
-						"type":"installCia"
-					},
-					{
-						"file":"/",
 						"type":"deleteFile"
 					}
-				],
-				"type":"nightly"
+				]
 			}
 		},
 		{
 			"info":{
 				"title":"けんじい.3gx",
-				"description":"使いやすさで有名な3gx",
-				"console":["3DS"]
+				"description":"使いやすさで有名な3gx\nまだ用意出来ていない",
+				"console":["3DS"],
+				"category":["3gx","plg","ACNL","とび森"]
 			},
 			"全ての3gxをインストール":{
 				"script":[]
@@ -211,7 +77,7 @@
 		{
 			"info":{
 				"title":"Gokiro.3gx",
-				"description":"他の3gxにはない機能がいっぱい\n",
+				"description":"他の3gxにはない機能がいっぱい\nV2PlgLodr.3gxはLuma3DS v10以上用\nまだ用意出来ていない",
 				"console":["3DS"],
 				"category":["3gx","plg","ACNL","とび森"]
 			},
