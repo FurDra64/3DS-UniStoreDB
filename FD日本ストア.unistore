@@ -6,7 +6,7 @@
 		"file":"FD日本ストア.unistore",
 		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FD%E6%97%A5%E6%9C%AC%E3%82%B9%E3%83%88%E3%82%A2.unistore",
 		"version":3,
-		"revision":8
+		"revision":9
 	},
 	"storeContent":[
 		{
@@ -72,6 +72,51 @@
 			},
 			"[最新]CTRPF_me409.3gx":{
 				"script":[]
+			}
+		},
+		{
+			"info":{
+				"title":"ブラウザフィルター解除.gm9",
+				"description":"godmode9でブラウザのフィルターを解除する奴\ngodmode9を起動してhomeからscript\nfiltering_disabler_ja.gm9を実行\nするとフィルタリングが解除される",
+				"console":["3DS"]
+			},
+			"filtering_disabler_ja.gm9":{
+				"script":[
+					{
+						"file":"https://github.com/windows-server-2003/3DS-Filtering-Disabler/releases/download/v0/filtering_disabler_v0.zip",
+						"output":"/filtering_disabler_v0.zip",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/filtering_disabler_v0.zip",
+						"input":"filtering_disabler_ja.gm9",
+						"output":"/gm9/scripts/filtering_disabler_ja.gm9",
+						"type":"extractFile"
+					},
+					{
+						"file":"/filtering_disabler_v0.zip",
+						"type":"deleteFile"
+					}
+				]
+			},
+			"filtering_disabler_en.gm9":{
+				"script":[
+					{
+						"file":"https://github.com/windows-server-2003/3DS-Filtering-Disabler/releases/download/v0/filtering_disabler_v0.zip",
+						"output":"/filtering_disabler_v0.zip",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/filtering_disabler_v0.zip",
+						"input":"filtering_disabler_en.gm9",
+						"output":"/gm9/scripts/filtering_disabler_en.gm9",
+						"type":"extractFile"
+					},
+					{
+						"file":"/filtering_disabler_v0.zip",
+						"type":"deleteFile"
+					}
+				]
 			}
 		},
 		{
