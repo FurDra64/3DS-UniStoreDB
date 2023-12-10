@@ -1,23 +1,23 @@
 {
 	"storeInfo":{
-		"title":"FurDra_JPN_Archive",
+		"title":"FurDra日本ストア",
 		"author":"FurDra",
 		"description":"3gx,Luma3DS,Pretendoなどを自動インストールする日本のストア",
-		"file":"FurDra_JPN_Archive.unistore",
-		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FurDra_JPN_Archive.unistore",
+		"file":"FD日本ストア.unistore",
+		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FD日本ストア.unistore",
 		"version":3,
-		"revision":5
+		"revision":6
 	},
 	"storeContent":[
 		{
 			"info":{
-				"title":"良い感じにセットアップ",
+				"title":"改造自動セットアップ",
 				"version":"v1.0.0",
 				"console":["3DS"],
-				"description":"難しい事分からない人向けに\nPretendoとLuma3DSを良い感じに設定する\nPretendoを使う場合Nimbusで切り替えた後に\n新しくアカウントを作ってください\nLuma3DSの設定が変わります\ndisable_arm11_exception_handlers = 1\napp_launch_new_3ds_cpu = clock+l2",
+				"description":"このストアを使うなら最初に入れるべき\nv9.1のコードも使えるv13.0.2のPlugin Selector\nLuma3DSの最適な設定を自動設定\nPretendoの自動フルインストール\nPretendoを使う場合Nimbusで切り替えた後に\n新しくアカウントを作ってください",
 				"last_updated":"2023-11-26 at 3:00 (UTC)"
 			},
-			"インストール!!":{
+			"Luma3DSとPretendoインストール!!":{
 				"script":[
 					{
 						"file":"/boot.firm",
@@ -86,13 +86,23 @@
 					{
 						"file":"/combined.1.5.0.zip",
 						"input":"",
-						"message":"Pretendo Nimbusをインストール",
+						"message":"Pretendo Nimbusを展開",
 						"output":"/",
 						"type":"extractFile"
 					},
 					{
 						"file":"/combined.1.5.0.zip",
 						"message":"一時ファイルを削除",
+						"type":"deleteFile"
+					},
+					{
+						"file":"/cias/nimbus.cia",
+						"message":"Pretendo Nimbusをインストール",
+						"type":"installCia"
+					},
+					{
+						"file":"/cias/nimbus.cia",
+						"message":"一時ファイル削除",
 						"type":"deleteFile"
 					},
 					{
@@ -108,6 +118,108 @@
 					}
 				],
 				"type":"nightly"
+			},
+			"主要アプリのアップデート":{
+				"script":[
+					{
+						"repo":"astronautlevel2/Anemone3DS",
+						"file":"Anemone3DS.cia",
+						"output":"/Anemone3DS.cia",
+						"type":"downloadRelease"
+					},
+					{
+						"file":"/Anemone3DS.cia",
+						"type":"installCia"
+					},
+					{
+						"file":"/Anemone3DS.cia",
+						"type":"deleteFile"
+					},
+					{
+						"repo":"BernardoGiordano/Checkpoint",
+						"file":"Checkpoint.cia",
+						"output":"/Checkpoint.cia",
+						"type":"downloadRelease"
+					},
+					{
+						"file":"/Checkpoint.cia",
+						"type":"installCia"
+					},
+					{
+						"file":"/Checkpoint.cia",
+						"type":"deleteFile"
+					},
+					{
+						"repo":"astronautlevel2/Anemone3DS",
+						"file":"Anemone3DS.cia",
+						"output":"/Anemone3DS.cia",
+						"type":"downloadRelease"
+					},
+					{
+						"file":"/",
+						"type":"installCia"
+					},
+					{
+						"file":"/",
+						"type":"deleteFile"
+					},
+					{
+						"repo":"astronautlevel2/Anemone3DS",
+						"file":"Anemone3DS.cia",
+						"output":"/Anemone3DS.cia",
+						"type":"downloadRelease"
+					},
+					{
+						"file":"/",
+						"type":"installCia"
+					},
+					{
+						"file":"/",
+						"type":"deleteFile"
+					},
+					{
+						"repo":"astronautlevel2/Anemone3DS",
+						"file":"Anemone3DS.cia",
+						"output":"/Anemone3DS.cia",
+						"type":"downloadRelease"
+					},
+					{
+						"file":"/",
+						"type":"installCia"
+					},
+					{
+						"file":"/",
+						"type":"deleteFile"
+					}
+				],
+				"type":"nightly"
+			}
+		},
+		{
+			"info":{
+				"title":"けんじい.3gx",
+				"description":"使いやすさで有名な3gx",
+				"console":["3DS"]
+			},
+			"全ての3gxをインストール":{
+				"script":[]
+			},
+			"[最新]CTRPF_me409.3gx":{
+				"script":[]
+			}
+		},
+		{
+			"info":{
+				"title":"Gokiro.3gx",
+				"description":"他の3gxにはない機能がいっぱい\n",
+				"console":["3DS"],
+				"category":["3gx","plg","ACNL","とび森"]
+			},
+			"全ての3gxをインストール":{
+				"script":[]
+			},
+			"[最新]v2.9.5 Cracked_V2PlgLdr.3gx by Tekito256":{
+				"script":[]
 			}
 		}
 	]
