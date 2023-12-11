@@ -6,7 +6,7 @@
 		"file":"FD日本ストア.unistore",
 		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FD%E6%97%A5%E6%9C%AC%E3%82%B9%E3%83%88%E3%82%A2.unistore",
 		"version":3,
-		"revision":10
+		"revision":11
 	},
 	"storeContent":[
 		{
@@ -55,6 +55,54 @@
 					},
 					{
 						"file":"/Luma3DS.zip",
+						"type":"deleteFile"
+					}
+				]
+			}
+		},
+		{
+			"info":{
+				"title":"FBI 日本語化 by yyoossk",
+				"description":"FBIを日本語化したアプリ\n元のFBIとは別でインストールされるから安心",
+				"console":["3DS"]
+			},
+			"最新ver.インストール":{
+				"script":[
+					{
+						"file":"https://github.com/yyoossk/FBI/releases/latest/download/FBI.cia",
+						"output":"/FBI.cia",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/FBI.cia",
+						"type":"installCia"
+					},
+					{
+						"file":"/FBI.cia",
+						"type":"deleteFile"
+					}
+				]
+			}
+		},
+		{
+			"info":{
+				"title":"ftpd",
+				"description":"起動したらPCやスマホと無線でSDをいじれるアプリ\n使い方は[PC,スマホ]FTP 使い方で検索してね",
+				"console":["3DS"]
+			},
+			"最新ver.インストール":{
+				"script":[
+					{
+						"file":"https://github.com/mtheall/ftpd/releases/latest/download/ftpd.cia",
+						"output":"/ftpd.cia",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/ftpd.cia",
+						"type":"installCia"
+					},
+					{
+						"file":"/ftpd.cia",
 						"type":"deleteFile"
 					}
 				]
