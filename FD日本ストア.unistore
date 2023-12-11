@@ -110,20 +110,6 @@
 		},
 		{
 			"info":{
-				"title":"けんじい.3gx",
-				"description":"使いやすさで有名な3gx\nまだ用意出来ていない",
-				"console":["3DS"],
-				"category":["3gx","plg","ACNL","とび森"]
-			},
-			"全ての3gxをインストール":{
-				"script":[]
-			},
-			"[最新]CTRPF_me409.3gx":{
-				"script":[]
-			}
-		},
-		{
-			"info":{
 				"title":"ブラウザフィルター解除.gm9",
 				"description":"godmode9でブラウザのフィルターを解除する奴\ngodmode9を起動してhomeからscript\nfiltering_disabler_ja.gm9を実行\nするとフィルタリングが解除される",
 				"console":["3DS"]
@@ -165,6 +151,20 @@
 						"type":"deleteFile"
 					}
 				]
+			}
+		},
+		{
+			"info":{
+				"title":"けんじい.3gx",
+				"description":"使いやすさで有名な3gx\nまだ用意出来ていない",
+				"console":["3DS"],
+				"category":["3gx","plg","ACNL","とび森"]
+			},
+			"全ての3gxをインストール":{
+				"script":[]
+			},
+			"[最新]CTRPF_me409.3gx":{
+				"script":[]
 			}
 		},
 		{
