@@ -5,15 +5,18 @@
 		"description":"3gx,Luma3DSなどを自動インストールする日本のストア\nリクエストがあれば追加する\n掲示板 https://furdra.bbs.fc2.com/",
 		"file":"FD日本ストア.unistore",
 		"url":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/FD%E6%97%A5%E6%9C%AC%E3%82%B9%E3%83%88%E3%82%A2.unistore",
+		"sheetURL":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/assets/FD%E6%97%A5%E6%9C%AC%E3%82%B9%E3%83%88%E3%82%A2.t3x",
+		"sheet":"FD日本ストア.t3x",
 		"version":3,
-		"revision":11
+		"revision":12
 	},
 	"storeContent":[
 		{
 			"info":{
 				"title":"Luma3DS",
 				"description":"Tekito-256が作った\nプラグインローダーと\n3gxがバージョン関係なく全て使える",
-				"console":["3DS"]
+				"console":["3DS"],
+				"icon_index":0
 			},
 			"Luma3DS v13.0.2 インストール":{
 				"script":[
@@ -64,7 +67,9 @@
 			"info":{
 				"title":"FBI 日本語化 by yyoossk",
 				"description":"FBIを日本語化したアプリ\n元のFBIとは別でインストールされるから安心",
-				"console":["3DS"]
+				"console":["3DS"],
+				"category":["アプリ"],
+				"icon_index":1
 			},
 			"最新ver.インストール":{
 				"script":[
@@ -88,7 +93,9 @@
 			"info":{
 				"title":"ftpd",
 				"description":"起動したらPCやスマホと無線でSDをいじれるアプリ\n使い方は[PC,スマホ]FTP 使い方で検索してね",
-				"console":["3DS"]
+				"console":["3DS"],
+				"category":["アプリ"],
+				"icon_index":2
 			},
 			"最新ver.インストール":{
 				"script":[
@@ -112,7 +119,8 @@
 			"info":{
 				"title":"ブラウザフィルター解除.gm9",
 				"description":"godmode9でブラウザのフィルターを解除する奴\ngodmode9を起動してhomeからscript\nfiltering_disabler_ja.gm9を実行\nするとフィルタリングが解除される",
-				"console":["3DS"]
+				"console":["3DS"],
+				"icon_index":3
 			},
 			"filtering_disabler_ja.gm9":{
 				"script":[
@@ -158,7 +166,8 @@
 				"title":"けんじい.3gx",
 				"description":"使いやすさで有名な3gx\nまだ用意出来ていない",
 				"console":["3DS"],
-				"category":["3gx","plg","ACNL","とび森"]
+				"category":["3gx","plg","ACNL","とび森"],
+				"icon_index":4
 			},
 			"全ての3gxをインストール":{
 				"script":[]
@@ -172,7 +181,8 @@
 				"title":"Gokiro.3gx",
 				"description":"他の3gxにはない機能がいっぱい\nV2PlgLodr.3gxはLuma3DS v10以上用\nここにない持ってる奴あったら欲しい",
 				"console":["3DS"],
-				"category":["3gx","plg","ACNL","とび森"]
+				"category":["3gx","ACNL","とび森"],
+				"icon_index":5
 			},
 			"全ての3gxをインストール":{
 				"script":[
