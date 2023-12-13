@@ -8,12 +8,13 @@
 		"sheetURL":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/assets/FD%E6%97%A5%E6%9C%AC%E3%82%B9%E3%83%88%E3%82%A2.t3x",
 		"sheet":"FD日本ストア.t3x",
 		"version":3,
-		"revision":12
+		"revision":14
 	},
 	"storeContent":[
 		{
 			"info":{
 				"title":"Luma3DS",
+				"author":"LumaTeam, forked by Tekito-256",
 				"description":"Tekito-256が作った\nプラグインローダーと\n3gxがバージョン関係なく全て使える",
 				"console":["3DS"],
 				"icon_index":0
@@ -65,8 +66,9 @@
 		},
 		{
 			"info":{
-				"title":"FBI 日本語化 by yyoossk",
-				"description":"FBIを日本語化したアプリ\n元のFBIとは別でインストールされるから安心",
+				"title":"FBI 日本語化",
+				"author":"Shadowtrance, Steveice10, forked by yyoossk",
+				"description":"FBIを日本語化したアプリ\n元のFBIから置き換わるようにインストールされる",
 				"console":["3DS"],
 				"category":["アプリ"],
 				"icon_index":1
@@ -92,7 +94,8 @@
 		{
 			"info":{
 				"title":"ftpd",
-				"description":"起動したらPCやスマホと無線でSDをいじれるアプリ\n使い方は[PC,スマホ]FTP 使い方で検索してね",
+				"author":"mtheall",
+				"description":"起動したらPCやスマホと無線でSDをいじれるアプリ\n\"Windows iPhone Android FTP 使い方\"\nで使い方を検索して使ってね",
 				"console":["3DS"],
 				"category":["アプリ"],
 				"icon_index":2
@@ -118,6 +121,7 @@
 		{
 			"info":{
 				"title":"ブラウザフィルター解除.gm9",
+				"author":"windows-server-2003",
 				"description":"godmode9でブラウザのフィルターを解除する奴\ngodmode9を起動してhomeからscript\nfiltering_disabler_ja.gm9を実行\nするとフィルタリングが解除される",
 				"console":["3DS"],
 				"icon_index":3
@@ -163,39 +167,73 @@
 		},
 		{
 			"info":{
+				"title":"CTGP-7 ダウンローダー",
+				"author":"CTGP-7 Team",
+				"description":"CTGP-7はマリオカート7用のModpackで、\nいくつかのカスタムトラック、キャラクター、音楽に加えて、\n速度計、速度モディファイア、後方カメラなどの\n追加機能が含まれています。\nダウンローダーをインストールして起動した後、\nダウンロードに時間が掛かる事に注意してください。\n他に情報が必要な場合は ctgp-7.github.io にアクセス",
+				"console":["3DS"],
+				"category":["アプリ","ゲーム","Mod"],
+				"icon_index":6,
+				"screenshots":[
+					{
+						"description":"Character selection",
+						"url":"https://db.universal-team.net/assets/images/screenshots/ctgp-7-downloader/character-selection.png"
+					},
+					{
+						"description":"Extra features menu",
+						"url":"https://db.universal-team.net/assets/images/screenshots/ctgp-7-downloader/extra-features-menu.png"
+					},
+					{
+						"description":"Title & cup selection",
+						"url":"https://db.universal-team.net/assets/images/screenshots/ctgp-7-downloader/title-&-cup-selection.png"
+					}
+				],
+				"wiki": "http://mk7.tock.eu/index.php?title=CTGP-7"
+			},
+			"インストール":{
+				"script":[
+					{
+						"file":"https://ctgp7.page.link/cia_downloader",
+						"output":"/CTGP-7_Downloader.cia",
+						"type":"downloadFile"
+					},
+					{
+						"file":"CTGP-7_Downloader.cia",
+						"type":"installCia"
+					},
+					{
+						"file":"CTGP-7_Downloader.cia",
+						"type":"deleteFile"
+					}
+				]
+			}
+		},
+		{
+			"info":{
 				"title":"けんじい.3gx",
+				"author":"けんじい kenjiy",
 				"description":"使いやすさで有名な3gx\nまだ用意出来ていない",
 				"console":["3DS"],
 				"category":["3gx","plg","ACNL","とび森"],
 				"icon_index":4
 			},
-			"全ての3gxをインストール":{
+			"[最新]CTRPF_me409.3gx":{
 				"script":[]
 			},
-			"[最新]CTRPF_me409.3gx":{
+			"全ての3gxをインストール":{
 				"script":[]
 			}
 		},
 		{
 			"info":{
 				"title":"Gokiro.3gx",
-				"description":"他の3gxにはない機能がいっぱい\nV2PlgLodr.3gxはLuma3DS v10以上用\nここにない持ってる奴あったら欲しい",
+				"author":"あだろ",
+				"description":"他の3gxにはない機能がいっぱい\nV2PlgLodr.3gxはLuma3DS v10.3以上用\nここにない持ってる奴あったら欲しい",
 				"console":["3DS"],
 				"category":["3gx","ACNL","とび森"],
 				"icon_index":5
 			},
-			"全ての3gxをインストール":{
+			"v2.5.6 Patched.3gx":{
 				"script":[
-					{
-						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21110&authkey=!AGDL559SVe82XaU",
-						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked_V2PlgLdr.3gx",
-						"type":"downloadFile"
-					},
-					{
-						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21116&authkey=!AD_EH9qFU9ZVKJg",
-						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked.3gx",
-						"type":"downloadFile"
-					},
 					{
 						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21117&authkey=!AKRjIyX5kcCZjUw",
 						"output":"/luma/plugins/0004000000086200/Gokiro256_Patched.3gx",
@@ -221,11 +259,21 @@
 					}
 				]
 			},
-			"v2.5.6 Patched.3gx":{
+			"全ての3gxをインストール":{
 				"script":[
 					{
 						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21117&authkey=!AKRjIyX5kcCZjUw",
 						"output":"/luma/plugins/0004000000086200/Gokiro256_Patched.3gx",
+						"type":"downloadFile"
+					},
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21110&authkey=!AGDL559SVe82XaU",
+						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked_V2PlgLdr.3gx",
+						"type":"downloadFile"
+					},
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21116&authkey=!AD_EH9qFU9ZVKJg",
+						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked.3gx",
 						"type":"downloadFile"
 					}
 				]
