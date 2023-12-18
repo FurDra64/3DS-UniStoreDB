@@ -439,25 +439,6 @@
 				"category":["3gx","ACNL","とび森"],
 				"icon_index":5
 			},
-			"全ての3gxをインストール":{
-				"script":[
-					{
-						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21117&authkey=!AKRjIyX5kcCZjUw",
-						"output":"/luma/plugins/0004000000086200/Gokiro256_Patched.3gx",
-						"type":"downloadFile"
-					},
-					{
-						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21110&authkey=!AGDL559SVe82XaU",
-						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked_V2PlgLdr.3gx",
-						"type":"downloadFile"
-					},
-					{
-						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21116&authkey=!AD_EH9qFU9ZVKJg",
-						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked.3gx",
-						"type":"downloadFile"
-					}
-				]
-			},
 			"v2.5.6 Patched.3gx":{
 				"script":[
 					{
