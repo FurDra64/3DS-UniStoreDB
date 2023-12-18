@@ -8,7 +8,7 @@
 		"sheetURL":"https://raw.githubusercontent.com/FurDra64/3DS-UniStoreDB/main/assets/FD%E6%97%A5%E6%9C%AC%E3%82%B9%E3%83%88%E3%82%A2.t3x",
 		"sheet":"FD日本ストア.t3x",
 		"version":3,
-		"revision":14
+		"revision":15
 	},
 	"storeContent":[
 		{
@@ -211,16 +211,223 @@
 			"info":{
 				"title":"けんじい.3gx",
 				"author":"けんじい kenjiy",
-				"description":"使いやすさで有名な3gx\nまだ用意出来ていない",
+				"description":"使いやすさで有名な3gx\n400以上はamiibo+対応\nplgはBootNTRを起動する必要がある",
 				"console":["3DS"],
 				"category":["3gx","plg","ACNL","とび森"],
 				"icon_index":4
 			},
-			"[最新]CTRPF_me409.3gx":{
+			"CTRPF_me309.3gx":{
 				"script":[]
 			},
-			"全ての3gxをインストール":{
+			"CTRPF_me400.3gx":{
 				"script":[]
+			},
+			"CTRPF_me402.3gx":{
+				"script":[]
+			},
+			"CTRPF_me403.3gx":{
+				"script":[
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21119&authkey=!ANPPib7g6AGNi7k",
+						"output":"/CTRPF_me.7z",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/CTRPF_me403.3gx",
+						"output":"/luma/plugins/0004000000086200/CTRPF_me403.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/CTRPF_me403.3gx",
+						"output":"/luma/plugins/0004000000198D00/CTRPF_me403.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000086200/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000198D00/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"type":"deleteFile"
+					}
+				]
+			},
+			"CTRPF_me405.3gx":{
+				"script":[
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21119&authkey=!ANPPib7g6AGNi7k",
+						"output":"/CTRPF_me.7z",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/CTRPF_me405.3gx",
+						"output":"/luma/plugins/0004000000086200/CTRPF_me405.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/CTRPF_me405.3gx",
+						"output":"/luma/plugins/0004000000198D00/CTRPF_me405.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000086200/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000198D00/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"type":"deleteFile"
+					}
+				]
+			},
+			"CTRPF_me407.3gx":{
+				"script":[
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21119&authkey=!ANPPib7g6AGNi7k",
+						"output":"/CTRPF_me.7z",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/CTRPF_me407.3gx",
+						"output":"/luma/plugins/0004000000086200/CTRPF_me407.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/CTRPF_me407.3gx",
+						"output":"/luma/plugins/0004000000198D00/CTRPF_me407.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000086200/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000198D00/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"type":"deleteFile"
+					}
+				]
+			},
+			"CTRPF_me408.3gx":{
+				"script":[
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21119&authkey=!ANPPib7g6AGNi7k",
+						"output":"/CTRPF_me.7z",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/CTRPF_me408.3gx",
+						"output":"/luma/plugins/0004000000086200/CTRPF_me408.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/CTRPF_me408.3gx",
+						"output":"/luma/plugins/0004000000198D00/CTRPF_me408.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000086200/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000198D00/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"type":"deleteFile"
+					}
+				]
+			},
+			"[最新]CTRPF_me409.3gx":{
+				"script":[
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21119&authkey=!ANPPib7g6AGNi7k",
+						"output":"/CTRPF_me.7z",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/CTRPF_me409.3gx",
+						"output":"/luma/plugins/0004000000086200/CTRPF_me409.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/CTRPF_me409.3gx",
+						"output":"/luma/plugins/0004000000198D00/CTRPF_me409.3gx",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000086200/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000086200/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"luma/plugins/0004000000198D00/kanji_lst.txt",
+						"output":"/luma/plugins/0004000000198D00/kanji_lst.txt",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"type":"deleteFile"
+					}
+				]
+			},
+			"全ての3gxとplgをインストール":{
+				"script":[
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21119&authkey=!ANPPib7g6AGNi7k",
+						"output":"/CTRPF_me.7z",
+						"type":"downloadFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"input":"",
+						"output":"/",
+						"type":"extractFile"
+					},
+					{
+						"file":"/CTRPF_me.7z",
+						"type":"deleteFile"
+					}
+				]
 			}
 		},
 		{
@@ -231,6 +438,25 @@
 				"console":["3DS"],
 				"category":["3gx","ACNL","とび森"],
 				"icon_index":5
+			},
+			"全ての3gxをインストール":{
+				"script":[
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21117&authkey=!AKRjIyX5kcCZjUw",
+						"output":"/luma/plugins/0004000000086200/Gokiro256_Patched.3gx",
+						"type":"downloadFile"
+					},
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21110&authkey=!AGDL559SVe82XaU",
+						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked_V2PlgLdr.3gx",
+						"type":"downloadFile"
+					},
+					{
+						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21116&authkey=!AD_EH9qFU9ZVKJg",
+						"output":"/luma/plugins/0004000000086200/Gokiro_JPN_Public_Cracked.3gx",
+						"type":"downloadFile"
+					}
+				]
 			},
 			"v2.5.6 Patched.3gx":{
 				"script":[
