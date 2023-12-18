@@ -1,7 +1,6 @@
 ## 概要
 Universal-Updater用の日本のStore  
 3gxやPretendoなどを簡単に入れられるストア  
-ストアの名前誰か考えて()
 
 ## ストアの追加
 1. 3DSでUniversal Updaterを起動する
