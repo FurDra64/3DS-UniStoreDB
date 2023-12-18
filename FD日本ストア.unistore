@@ -439,7 +439,7 @@
 				"category":["3gx","ACNL","とび森"],
 				"icon_index":5
 			},
-			"全ての3gxをインストール":{
+			"-全ての3gxをインストール":{
 				"script":[
 					{
 						"file":"https://onedrive.live.com/download?resid=10E3289E7C097568%21117&authkey=!AKRjIyX5kcCZjUw",
